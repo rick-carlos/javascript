@@ -7,19 +7,25 @@
 </head>
 <body>
     <h1 id="demo">Aperte W</h1>
+    <h2 id="demo2"></h2>
     <button id="botao">Aperte</button>
 
     <script>
-        
+
         const botao = document.getElementById('botao');
         const demo = document.getElementById('demo');
+        const demo2 = document.getElementById('demo2');
 
-        botao.addEventListener('keydown', function(e) {
+        addEventListener('keydown', function(e) {
             if (e.key === 'w' || e.key === 'W') {
                 demo.textContent = 'Você Apertou W';
 
             }
             
+        });
+
+        botao.addEventListener('click', function() {
+            demo2.textContent = "Apertou no Botão";
         });
 
     </script>
