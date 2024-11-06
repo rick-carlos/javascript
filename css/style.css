@@ -1,0 +1,22 @@
+body {
+    background-color:rgb(19, 44, 44);
+}
+
+.box { /* Será a caixa onde o jogo será rodado */
+    height: 300px;
+    width: 600px;
+    border: 10px black solid;
+    position: relative;
+}
+
+.personagem { 
+    height: 40px;
+    width:  30px;
+    border: 3px black solid;
+    background-color: aqua;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+
+}
+

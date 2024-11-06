@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo">Aperte W</h1>
+    <button id="botao">Aperte</button>
+
+    <script>
+        
+        const botao = document.getElementById('botao');
+        const demo = document.getElementById('demo');
+
+        botao.addEventListener('keydown', function(e) {
+            if (e.key === 'w' || e.key === 'W') {
+                demo.textContent = 'Você Apertou W';
+
+            }
+            
+        });
+
+    </script>
+</body>
+</html>
